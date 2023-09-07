@@ -85,7 +85,7 @@ export default function LoginPage() {
             </div>
             <button id="clickbutton" onClick={user.email !== "" || user.email.includes("@") === true ? handleClick : notify} className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600">{buttonDisabled ? "Login" : "no Login"}</button>
             <button onClick={()=>router.push("/forgotpassword")} className="hover:underline">Forgot Your Password?</button>
-            <Link href="/signup">Visit SignUp Page</Link>
+            <Link className="hover:underline" href="/signup">Visit SignUp Page</Link>
             <ToastContainer
            position="top-center"
            autoClose={2000}
